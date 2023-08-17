@@ -1,0 +1,5 @@
+# Install Beaconcha (Python Tool)
+pip install eth2-beaconcha
+
+# Monitor Validator Performance
+beaconcha --validators=<validator_index> --refresh-rate=5
