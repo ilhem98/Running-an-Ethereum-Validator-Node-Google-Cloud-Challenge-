@@ -1,0 +1,28 @@
+# Set Up Google Cloud VM Instance
+gcloud compute instances create ethereum-validator \
+   --image-family ubuntu-2004-lts --image-project ubuntu-os-cloud \
+   --boot-disk-size 100GB --machine-type n1-standard-2 --zone <your-zone>
+
+# SSH into VM
+gcloud compute ssh ethereum-validator
+
+# Install Prysm Beacon Chain and Validator (Example: Using Docker)
+docker run -d --name prysm-beacon --restart always -p 4000:4000 \
+   -v /path/to/config:/config -v /path/to/validator-keys:/keys \
+   gcr.io/prysmaticlabs/prysm/beacon-chain:latest
+
+# Configure Systemd to Automatically Start Beacon Chain
+sudo tee /etc/systemd/system/prysm-beacon.service <<EOF
+[Unit]
+Description=Prysm Beacon Chain
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a prysm-beacon
+ExecStop=/usr/bin/docker stop -t 2 prysm-beacon
+
+[Install]
+WantedBy=default.target
+EOF
+sudo systemctl enable prysm-beacon.service
