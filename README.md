@@ -29,7 +29,10 @@ Each client has its strengths and trade-offs. For example, Prysm is known for it
 1. **Install Dependencies:** Update your system, install required packages, and set up a firewall.
 2. **Client Installation:** Follow the installation guide for your chosen Ethereum 2.0 client.
 3. **Configuration:** Configure your client with the appropriate settings, validator keys, and network configurations.
-  
+As shown in the picture below:
+
+![NFT drawio](https://github.com/ilhem98/Running-an-Ethereum-Validator-Node-Google-Cloud-Challenge-/assets/78962246/cef78d17-be42-432f-8918-3159d02c2d42)
+
 
 
 **Acquiring the Required 32 ETH:**
