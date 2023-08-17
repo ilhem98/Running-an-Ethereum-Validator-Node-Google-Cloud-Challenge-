@@ -1,4 +1,4 @@
-![NFT drawio](https://github.com/ilhem98/Running-an-Ethereum-Validator-Node-Google-Cloud-Challenge-/assets/78962246/178a4c1a-eb07-428d-96f3-b463cfa8401f)# Running-an-Ethereum-Validator-Node-Google-Cloud-Challenge-
+# Running-an-Ethereum-Validator-Node-Google-Cloud-Challenge-
 
 **Role of Validator Nodes in Ethereum:**
 Validator nodes play a crucial role in the Ethereum network by participating in the proof-of-stake consensus mechanism called Ethereum 2.0 (Eth2 or Serenity). Unlike proof-of-work, where miners solve complex mathematical puzzles to add new blocks, proof-of-stake relies on validators to propose and attest to new blocks and secure the network.
@@ -29,7 +29,7 @@ Each client has its strengths and trade-offs. For example, Prysm is known for it
 1. **Install Dependencies:** Update your system, install required packages, and set up a firewall.
 2. **Client Installation:** Follow the installation guide for your chosen Ethereum 2.0 client.
 3. **Configuration:** Configure your client with the appropriate settings, validator keys, and network configurations.
-   ![Uploading NFT.drawio.png…]()
+  
 
 
 **Acquiring the Required 32 ETH:**
