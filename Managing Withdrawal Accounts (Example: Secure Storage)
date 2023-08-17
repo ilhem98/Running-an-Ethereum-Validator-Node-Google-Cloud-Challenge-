@@ -1,0 +1,6 @@
+# Secure Withdrawal Keys Offline (Store in an Encrypted USB Drive)
+# Encrypt the USB drive: sudo cryptsetup luksFormat /dev/sdX
+# Unlock and mount: sudo cryptsetup open /dev/sdX usb-storage && sudo mount /dev/mapper/usb-storage /mnt/usb-storage
+
+# Periodically Transfer Earned ETH (Example: using Prysm's Transfer Command)
+prysm.sh validator accounts transfer --keys-dir=/path/to/keys --to=<withdrawal_address> --amount=<amount_in_wei>
