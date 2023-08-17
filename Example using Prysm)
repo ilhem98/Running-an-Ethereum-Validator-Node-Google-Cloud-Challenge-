@@ -1,0 +1,8 @@
+# Generate Validator Keys
+prysm.sh validator accounts create
+
+# Secure Your Keys (Offline Storage Example)
+# Copy your keys to a USB drive and store it securely offline.
+
+# Deposit ETH using Ethereum 2.0 Deposit Contract
+# Go to the Ethereum 2.0 Launch Pad and follow the instructions.
