@@ -1,0 +1,9 @@
+# Enable UFW Firewall
+sudo ufw enable
+
+# Schedule System Updates
+sudo apt install unattended-upgrades
+sudo dpkg-reconfigure -plow unattended-upgrades
+
+# Optimize Disk Performance (Example: Trim SSD)
+sudo systemctl enable fstrim.timer
